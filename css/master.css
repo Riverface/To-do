@@ -1,0 +1,14 @@
+.jumbotron
+{
+position:static;
+width: 500px;
+padding: 10px;
+border-bottom: 10px groove;
+border-bottom-right-radius: 20px;
+border-right: 10px groove;
+}
+.main{
+border: 1px solid;
+width: 500px;
+border-radius:20px;
+}
