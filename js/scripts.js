@@ -7,8 +7,6 @@ $(document).ready(function() {
     newTask = new Task($("#taskname").val(), $("#taskdesc").val(), $("#prereqs").val(), false );
     console.log(newTask);
     taskBook.addtask(newTask);
-    $("#tasks").html("");
-
     Refreshtasks(taskBook);
 
   });
@@ -30,7 +28,7 @@ function Attachremove(tsk)
   $("#task" + tsk.id + "close").click(function(){
     taskBook.tasks.splice(window[tsk.id] - 1, 1);
     Refreshtasks(taskBook);
-    console.log("Done adding close button");
+    console.log("Clicked close");
       console.log("#task" + tsk.id + "close");
   });
   console.log("Done adding close button");
